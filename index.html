@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="ahmedELtaieb-todo-list" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>to do</title>
+  </head>
+  <body>
+    <div class="app">
+      <section class="app__wrapper">
+        <header class="app__header">
+          <h1>To Do list</h1>
+          <form class="app__search">
+            <input
+              type="search"
+              oninput="searchBooks(this)"
+              placeholder="search ..."
+            />
+          </form>
+        </header>
+        <main class="app__content">
+          <h2> My tasks</h2>
+          <ul class="app__list"></ul>
+          <form class="app__add">
+            <input type="text" placeholder="add a task" />
+            <button onclick="addBook(event)">Add</button>
+          </form>
+        </main>
+      </section>
+    </div>
+
+    <script src="./assets/js/js.js"></script>
+  </body>
+</html>
